@@ -1,0 +1,16 @@
+form{
+    padding: 10px;
+    margin: auto;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 350px;
+    margin-right: 350px;
+    background-color: #ccc;
+    border-radius: 15px;
+    
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
