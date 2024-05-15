@@ -28,13 +28,15 @@
           <div class=" d-flex d-inline" id="navbarNavDropdown">
               <div class="navbar-nav flex-grow-1" role="button" aria-expanded="false" style="flex-direction: row">
                 <div class="nav-item" data-bs-toggle="dropdown" aria-expanded="false">
-                  <a href="#" class="nav-link active" data-bs-toggle="tooltip" data-bs-html="true">
-                    <span class="material-symbols-outlined">person</span>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="index.html">Login</a></li>
-                    <li><a class="dropdown-item" href="cadastro_goku.html">Cadastro</a></li>
-                  </ul>
+                  <button class="dropdown-center" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: transparent; border: none;">
+                    <a href="#" class="nav-link active" data-bs-toggle="tooltip" data-bs-html="true">
+                      <span class="material-symbols-outlined">person</span>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="login_goku.html">Login</a></li>
+                          <li><a class="dropdown-item" href="cadastro_goku.html">Cadastro</a></li>
+                        </ul>
+                      </a>
+                  </button>
                 </div>
                 <div class="nav-item">
                   <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="background-color: transparent; border: none;">
@@ -67,57 +69,53 @@
                     <th>Preço</th>
                     <th>Quantidade</th>
                     <th></th>
-                    </tr>
+                  </tr>
                 </thead>
-                <td>
-                     <div class="Produto" style="align-items:start;">
+                <tr class="Produto-Unidade">
+                    <td class=" Produto">
+                      <div class="Produto" style="align-items:start;">
                       <img src="Camiseta Black.png" alt="camisa Black" style="width: 125 px; height: 125px;">
                       <div class="info" style="font-size: 26px;">
                           <span class="nome"></span>
                           <p class="descricao" style="color: darkgray"></p>
                       </div>
-                     </div>
-                </td>
-                <td>R$</td>
-                <td>
-                    <div>
-                      <button style="border:0px;border-radius: 100%;">
-                        <span class="material-symbols-outlined">
-                          horizontal_rule
-                        </span>
-                      </button>
-                      <span>0</span>
-                      <button style="border:0px;border-radius: 100%;">
-                        <span class="material-symbols-outlined">
-                        add</span>
-                      </button>
-                    </div>
-                </td>
-                <td> 
-                  <button style="border:none;border-radius: 100%; display-flex: align-itens:center;background-colorcolor: transparent;">
-                    <span class="material-symbols-outlined" style="color: #c5b8ff;">
-                  close
-                    </span>
-                </td>
-                </button>
+                      </div>
+                    </td>
+                    <td class="Preço">R$</td>
+                  <td>
+                      <div>
+                        <button style="border:0px;border-radius: 100%; background-color: transparent;">
+                          <span class="material-symbols-outlined">
+                            horizontal_rule
+                          </span>
+                        </button>
+                        <span>0</span>
+                        <button style="border:0px;border-radius: 100%; background-color: transparent;">
+                          <span class="material-symbols-outlined">
+                          add</span>
+                        </button>
+                      </div>
+                  </td>
+                  <td> 
+                    <button class="remove-product" style="border:none;border-radius: 100%; display:flex; align-items:center; background-color: transparent;">
+                      <span class="material-symbols-outlined" style="color: #c5b8ff;">
+                    close
+                      </span>
+                  </td>
+                  </button>
+                </tr>
               </table>
           </main>
-          <div style="display: flex-block;
+          <card style="display: flex-block;
               align-items: flex-end; font-size: 18px; border-top-width: 1px; border-radius: 25px;">
-                <h2 class="title"> Forma de pagamento </h2> 
-              <div style="background-color: yellow;">
+                <h2 class="title"> Forma de pagamento </h2>
+                <div style="background-color: yellow;">
                   <p>Pix</p>
-              </div>
-              <div style="background-color: grey;">
+                </div>
+                <div style="background-color: grey;">
                   <p>Débito</p>
                 </div>
-              <div style="background-color: yellow;">
-                  <p>Crédito</p>
-                </div>
-              <div style="background-color: grey;">
-                  <p>Boleto</p>
-                </div>
-              </div>
+          </card>
           </div>
         </div>
       </div>
@@ -221,7 +219,7 @@
       </div>
     </div>
     </main>
-      <script></script>
+      <script src="carrinho.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
