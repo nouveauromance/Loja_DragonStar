@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドラゴンボール</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body style="min-width: 72px; padding: 0vw 4vw 0vw 4vw">
+  <!--navegador----------->
+    <nav class="navbar navbar-expand-lg " style="-webkit-box-align: center; margin-bottom: 6px;">
+      <div class="container-fluid" style="display:flex; justify-content: space-between;">
+          <a class="navbar-brand" href="index.html"> 
+            <div>
+              <span class="svg">
+                <img src="logo.svg" class="logo" style="width: 70px">
+              </span>
+            </div>
+          </a>
+        <div class=" d-flex align-self-end"> 
+          <form class="d-flex" role="search"> 
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button type="submit" style="background-color: transparent; border: none">
+              <span class="material-symbols-outlined"style="position"> search</span>
+            </button>
+          </form>
+          <div class=" d-flex d-inline" id="navbarNavDropdown">
+              <div class="navbar-nav flex-grow-1" role="button" aria-expanded="false" style="flex-direction: row">
+                <div class="nav-item" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button class="dropdown-center" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: transparent; border: none;">
+                    <a href="#" class="nav-link active" data-bs-toggle="tooltip" data-bs-html="true">
+                      <span class="material-symbols-outlined">person</span>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="login_goku.html">Login</a></li>
+                          <li><a class="dropdown-item" href="cadastro_goku.html">Cadastro</a></li>
+                        </ul>
+                      </a>
+                  </button>
+                </div>
+                <div class="nav-item">
+                  <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" style="background-color: transparent; border: none;">
+                    <a class="nav-link" href="#" alt="carrinho">
+                      <span class="material-symbols-outlined">shopping_bag </span>
+                    </a>
+                  </button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </nav>  
+  <!--Pagamento----------->
+  <h1>Selecione a Forma de Pagamento</h1>
+  <div style="display: flex; flex-direction: row;">
+  <form>
+    <label class="btn btn-outline-light p-4 h-100 w-100">
+      <h3>
+          <b class="text-dark">Cartão de Crédito</b>
+      </h3>
+      <hr>
+      <form action="">
+          <div class="form-floating mb-3">
+              <input type="text" id="txtNumero" class="form-control" placeholder=" ">
+              <label for="txtNumero" class="text-black-50">Número do Cartão</label>
+          </div>
+
+          <div class="form-floating mb-3">
+              <input type="text" id="txtValidade" class="form-control" placeholder=" ">
+              <label for="txtValidade" class="text-black-50">Validade (mm/aa)</label>
+          </div>
+
+          <div class="form-floating mb-3">
+              <input type="text" id="txtCodigo" class="form-control" placeholder=" ">
+              <label for="txtCodigo" class="text-black-50">Código de Segurança</label>
+          </div>
+
+          <div class="form-floating">
+              <select id="selParcelas" class="form-select">
+                  <option value="1" selected>À vista</option>
+                  <option value="2">2 x sem juros</option>
+                  <option value="3">3 x sem juros</option>
+                  <option value="4">4 x sem juros</option>
+                  <option value="5">5 x sem juros</option>
+                  <option value="6">6 x sem juros</option>
+              </select>
+              <label for="selParcelas" class="text-black-50">Parcelamento</label>
+          </div>
+      </form>
+  </label>
+  <a href="/index.html" class="btn btn-danger btn-lg ms-2 mb-4">Finalizar</a>
+  <form>
+    <label class="btn btn-outline-light p-4 h-100 w-100" for="pag1">
+      <h3>
+          <b class="text-dark">Débito</b>
+      </h3>
+      <hr>
+      <form action="">
+          <div class="form-floating mb-3">
+              <input type="text" id="txtNumero" class="form-control" placeholder=" ">
+              <label for="txtNumero" class="text-black-50">Número do Cartão</label>
+          </div>
+
+          <div class="form-floating mb-3">
+              <input type="text" id="txtValidade" class="form-control" placeholder=" ">
+              <label for="txtValidade" class="text-black-50">Validade (mm/aa)</label>
+          </div>
+
+          <div class="form-floating mb-3">
+              <input type="text" id="txtCodigo" class="form-control" placeholder=" ">
+              <label for="txtCodigo" class="text-black-50">Código de Segurança</label>
+          </div>
+      </form>
+  </label>
+  <a href="/index.html" class="btn btn-danger btn-lg ms-2 mb-4">Finalizar</a>
+  <form>
+    <label class="btn btn-outline-light p-4 h-100 w-100" >
+      <h3>
+          <b class="text-dark">Pix</b>
+      </h3>
+      <hr>
+      <form action="">
+          <div class="form-floating mb-3">
+              <H1>Chave de Pagamento</H1>
+              <p>0000.00000.0000</p>
+          </div>
+
+          <div class="form-floating mb-3">
+              <img src="qrcode.png" alt="qrcodePagamento">
+          </div>
+
+          
+      </form>
+  </label>
+
+  </form>
+
+</div>
+</body>
