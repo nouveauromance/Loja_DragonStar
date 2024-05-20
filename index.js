@@ -1,4 +1,4 @@
-var removeproduct = document.getElementsByClassName("remove-product")
+const removeproduct = document.getElementsByClassName("remove-product")
 console.log(removeproduct)
 for(var i = 0; 1< removeproduct.length; i++) {
     removeproduct[i].addEventListener("click", function(event) {
