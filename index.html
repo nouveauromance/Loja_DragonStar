@@ -58,76 +58,60 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <main style="font-size: 20px">
-              <table id="table" style="width: 75%">
-                <thead style="border-bottom: 2px;">
-                  <tr style="border-bottom: 2px; text-align: left;
-                  justify-content: space-around;
-                  padding: 10px;
-                  color: dimgray;
-                  ">
-                    <th>Produto</th>
-                    <th>Preço</th>
-                    <th>Quantidade</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tr class="Produto-Unidade">
-                    <td class=" Produto">
-                      <div class="Produto" style="align-items:start;">
-                      <img src="Camiseta Black.png" alt="camisa Black" style="width: 125 px; height: 125px;">
-                      <div class="info" style="font-size: 26px;">
-                          <span class="nome"></span>
-                          <p class="descricao" style="color: darkgray"></p>
-                      </div>
-                      </div>
-                    </td>
-                    <td class="Preço">R$</td>
-                  <td>
-                      <div>
-                        <button style="border:0px;border-radius: 100%; background-color: transparent;">
-                          <span class="material-symbols-outlined">
-                            horizontal_rule
-                          </span>
-                        </button>
-                        <span>0</span>
-                        <button style="border:0px;border-radius: 100%; background-color: transparent;">
-                          <span class="material-symbols-outlined">
-                          add</span>
-                        </button>
-                      </div>
-                  </td>
-                  <td> 
-                    <button class="remove-product" style="border:none;border-radius: 100%; display:flex; align-items:center; background-color: transparent;">
-                      <span class="material-symbols-outlined" style="color: #c5b8ff;">
-                    close
-                      </span>
-                  </td>
-                  </button>
+            <table id="table" style="width: 75%">
+            <!--Tabela Produto-->
+              <thead style="border-bottom: 2px;">
+                <tr style="border-bottom: 2px; text-align: left; justify-content: space-around; padding: 10px; color: dimgray;">
+                  <th>Produto</th>
+                  <th>Preço</th>
+                  <th>Quantidade</th>
+                  <th></th>
                 </tr>
-              </table>
+              </thead>
+              <tr class="Produto-Unidade">
+                <td class=" Produto">
+                  <div class="Produto" style="align-items:start;">
+                    <img src="Camiseta Black.png" alt="camisa Black" style="width: 125 px; height: 125px;">
+                    <div class="info" style="font-size: 26px;">
+                      <span class="nome"></span>
+                      <p class="descricao" style="color: darkgray"></p>
+                    </div>
+                  </div>
+                </td>
+                <td class="Preço">R$ 0</td>
+                <td>
+                  <div>
+                    <button style="border:0px;border-radius: 100%; background-color: transparent;">
+                      <span class="material-symbols-outlined"> horizontal_rule </span>
+                    </button>
+                    <span>0</span>
+                    <button style="border:0px;border-radius: 100%; background-color: transparent;"> <span class="material-symbols-outlined"> add </span> </button>
+                  </div>
+                </td>
+                <td> 
+                  <button class="remove-product" style="border:none;border-radius: 100%; display:flex; align-items:center; background-color: transparent;">
+                    <span class="material-symbols-outlined" style="color: #c5b8ff;"> close </span>
+                  </button>
+                </td>
+              </tr>
+            </table>
           </main>
-          <card style="display: flex-block;
-              align-items: flex-end; font-size: 18px; border-top-width: 1px; border-radius: 25px;">
-                <h2 class="title"> Forma de pagamento </h2>
-                <div style="background-color: yellow;">
-                  <p>Pix</p>
-                </div>
-                <div style="background-color: grey;">
-                  <p>Débito</p>
-                </div>
-              <div style="background-color: yellow;">
-                  <p>Crédito</p>
-                </div>
-              <div style="background-color: grey;">
-                  <p>Boleto</p>
-                </div>
-          </card>
+          <!--Pagamento-->
+          <aside style="position: absolute;bottom: 50px;width: 100%;">
+            <hr>
+            <div class="Total" style="display: flex; align-items: center; justify-content: space-between; padding: 32px 32px 40px 32px;">
+              <div> <h3>Total</h3> </div>
+              <div class="Total">R$0</div>
+            </div>
+            <button id="Finalizar compras"  class="btn btn-warning" type="button" style="display: flex;margin: auto;width: 300px;border-radius: 35px;">
+              <a href="carrinho.html" style="margin: auto;">Finalizar compras</a>
+            </button>
+          </aside>
           </div>
         </div>
       </div>
     </nav>
-
-    </div>
+  </div>
     <!--Carrosel-->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner" >
